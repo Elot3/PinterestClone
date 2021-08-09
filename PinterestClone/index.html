@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Pinterest</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow p-3 mb-3" id="navegation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid mb-2" src="img/logo.png" alt="logo" width="45">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-light">Inicio</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn text-light mx-2">Hoy</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn rounded-pill">
+                        <img src="img/outline_notifications_white_48dp.png" class="rounded-circle mx-2" alt=""
+                            width="35">
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn rounded-pill">
+                        <img src="img/baseline_chat_white_48dp.png" class="rounded-circle mx-2 mt-1" alt="" width="30">
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <div class="btn-group rounded-pill">
+                        <button class="btn">
+                            <img src="img/baseline_person_white_24dp.png" class="rounded-circle mx-2" alt="" width="30">
+                        </button>
+                        <button class="btn text-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <h6 class="dropdown-header">Cuentas</h6>
+                            <li><a class="dropdown-item" href="#">Agregar cuenta</a></li>
+                            <li><a class="dropdown-item" href="#">Agregar cuenta para empresa gratis</a></li>
+                            <h6 class="dropdown-header">Más opciones</h6>
+                            <li><a class="dropdown-item" href="#">Configuración</a></li>
+                            <li><a class="dropdown-item" href="#">Mejorar tu feed de inicio</a></li>
+                            <li><a class="dropdown-item" href="#">Descargar aplicación para Windows</a></li>
+                            <li><a class="dropdown-item" href="#">Obtener ayuda</a></li>
+                            <li><a class="dropdown-item" href="#">Ver condiciones de privacidad</a></li>
+                            <li><a class="dropdown-item" href="#">Salir</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                       
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light rounded-pill mt-2" type="submit" id="btn-small">
+                        <img src="img/baseline_search_white_48dp.png" alt="" width="30">
+                    </button>
+                </li>
+            </ul>
+            <form class="input-group mb-3" id="search">
+                <input class="form-control rounded-pill me-2 mt-2" type="search" placeholder="Buscar"
+                    aria-label="search" id="searchbar">
+                <button class="btn btn-outline-light rounded-pill mt-2" type="submit">
+                    <img src="img/baseline_search_white_48dp.png" alt="" width="30">
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 rounded" id="col-1">
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/db1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Esta es nuestra forma de decir que este es NUESTRO Pinterest</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/eggman.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text justify-content-center">Cosplaying bois</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/renolds.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Ryan's favorite dudes</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/fry.jpeg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p>Sabado en la noche</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 rounded" id="col-2">
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/zelda.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Fan art para Skyward Sword HD</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/spyro.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Arte para conmemorar la salida de Spyro Reignated Trilogy</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/mvc.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Arte de Marvel vs Capcom</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/presion.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">UNA COCA POR FAVOR!!</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 rounded" id="col-3">
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/pan.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Ya huele a pan de muerto</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/soul.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">EL ALMA DE LOS QUE VEAN ESTO ME PERTENECE!!!</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/coco.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Coco y Pura</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/Ham.png" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Ham</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 rounded" id="col-4">
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/cat.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Los gatos son algo malvados</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/Ajolote.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Un Ajo-lote</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/CrashM.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">El día de muertos ya esta cerca</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/breakfast.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Desayuno</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 rounded" id="col-5">
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/all might.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">United States of SMAAAAAASHHH!!!!</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/Landscape.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Swinging in the night</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/mushu.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Big Chale</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/idk.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">No recuerdo que era esto... pero se ve cool</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 rounded" id="col-6">
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/Alien.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Portada crossover entre Spider-Man y Alien</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/christmas cat.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Ya me pego el espiritu navideño</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/mazr.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Maze Wallpaper</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+                <div class="card text-light bg-dark mt-3">
+                    <img src="img/content/keys.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">El traje de un desarrollador</p>
+                    </div>
+                    <div class="imageOverlay position-absolute">
+                        <button class="btn rounded-pill position-absolute top-0 end-0 bg-danger text-light mt-2 mx-2">
+                            Guardar
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-0 bg-light mb-2 mx-2">
+                            <img src="img/outline_more_horiz_black_48dp.png" alt="" width="30">
+                        </button>
+                        <button class="btn rounded-pill position-absolute bottom-0 end-1 bg-light mb-2 mx-2">
+                            <img src="img/outline_share_black_48dp.png" alt="" width="25">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Javascript Space-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--End of Javascript Space-->
+</body>
+
+</html>
